@@ -1,0 +1,16 @@
+{
+  "watchForFilesChanges": false,
+  "chromeWebSecurity": false,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "waitForAnimation": true,
+  "defaultCommandTimeout": 6000,
+  "pageLoadTimeout": 60000,
+  "video": false,
+  "failOnStatusCode": false,
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 30000,
+  "env": {
+    "MAILSLURP_API_KEY": "7f0b1ff51ceba32c6df054cda9571224a49fda7a9e80cb69017c101dde99c3e1"
+  }
+}
