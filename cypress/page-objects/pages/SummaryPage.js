@@ -1,9 +1,8 @@
 export default class SummaryPage {
 
-
   static clickConfirm(){
     cy.contains('Confirm Details').click()
-    cy.wait(8000)
+    cy.contains('Submit').should('be.visible')
   }
 
   static cardFillPayment(){
@@ -24,7 +23,6 @@ export default class SummaryPage {
 
     cy.iframe('#bancard-payment-form > iframe')
         .contains('Submit').click()
-    cy.wait(6000)
     }
 
    static checkPaymentAccepted(){
@@ -33,6 +31,5 @@ export default class SummaryPage {
         .click()
     cy.url()
         .should('be.equal', 'https://gift-cards.phorest.com/salons/demo-us#success')
-
     }
 }
